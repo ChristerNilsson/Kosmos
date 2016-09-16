@@ -1,20 +1,18 @@
+BACKGR = 0
+
 class Area:
     
-    def __init__(self,x,y,w,h,name):
+    def __init__(self,x,y,w,h):
         self.x=x
         self.y=y
         self.w=w
         self.h=h
-        self.name=name
-        textSize(24)
-        fill(0)
-        text(name, self.x + self.w+20, self.y+30)
 
     def coords(self):
-        fill(204)
+        fill(BACKGR)
         noStroke()
         rect(self.x,self.y,self.w,self.h)
-        stroke(0)
+        stroke(255)
         strokeWeight(1)
         with pushMatrix():
             translate(self.x,self.y)
@@ -24,9 +22,14 @@ class Area:
     def save(self,filename):
         image = get(self.x,self.y,self.w+1,self.h+1) 
         image.save("data\\" + filename)
+        
+    def clear(self):
+        fill(BACKGR)
+        noStroke()
+        rect(self.x,self.y,self.w,self.h)
     
     def myget(self):
-        self.image = get(self.x,self.y,self.w,self.h)
+        self.image = get(self.x,self.y,self.w+1,self.h+1)
         return self.image
 
     def myset(self,img):
