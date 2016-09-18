@@ -3,7 +3,7 @@ def draw():
     with ass.check("whitePoint"): 
         if ass.ok(): return
 
-    with ass.check("redPoint"): 
+    with ass.check("redPoint"):  
         if ass.ok(): return
 
     with ass.check("greenPoint"): 
