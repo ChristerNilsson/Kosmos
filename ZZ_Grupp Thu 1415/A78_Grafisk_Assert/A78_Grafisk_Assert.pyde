@@ -32,6 +32,8 @@ def draw():                                            #
     with ass.check("verticalLine"): 
         if ass.errors(): return
         
+    #####################################        
+        
     with ass.check("yellowLine"): 
         if ass.errors(): return
 

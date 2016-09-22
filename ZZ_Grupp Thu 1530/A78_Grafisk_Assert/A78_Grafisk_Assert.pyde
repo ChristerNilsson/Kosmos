@@ -56,6 +56,8 @@ def draw():                                            #
     with ass.check("yellowQuad"):
         if ass.errors(): return
         
+   ####################################        
+        
     with ass.check("rotatedRectA"):
         if ass.errors(): return
         
