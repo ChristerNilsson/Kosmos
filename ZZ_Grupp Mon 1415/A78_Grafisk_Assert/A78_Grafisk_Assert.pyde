@@ -93,12 +93,14 @@ def draw():                                            #
         ellipse(80,100,80,80)
         fc(0,1,0,0.5)
         ellipse(120,100,100,100)
+        
     with ass.check("twoDiscsD"):
         if ass.errors(): return
         fc(1,0,0, 0.5) 
         ellipse(80,90,120,120)
         fc(0,1,0)
         ellipse
+        
     with ass.check("twoDiscsE"):
         if ass.errors(): return
 

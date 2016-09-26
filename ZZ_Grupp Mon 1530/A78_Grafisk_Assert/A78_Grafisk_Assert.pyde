@@ -16,6 +16,7 @@ def draw():                                            #
     with ass.check("greenBackground"): 
         if ass.errors(): return
         bg(0,1,0)
+        
     with ass.check("yellowBackground"): 
         if ass.errors(): return
         bg(1,1,0)
@@ -66,10 +67,12 @@ def draw():                                            #
         if ass.errors(): return
         fc(0,1,0)
         ellipse(120,60,60,40)
+        
     with ass.check("greenRect"): 
         if ass.errors(): return
         fc(0,1,0)
         rect(60,80,40,50)
+        
     with ass.check("redRect"):
         if ass.errors(): 
         fc
@@ -81,17 +84,17 @@ def draw():                                            #
     with ass.check("yellowQuad"):
         if ass.errors(): return
         
-    with ass.check("rotatedRectA"):
-        if ass.errors(): return
+    #with ass.check("rotatedRectA"):
+    #    if ass.errors(): return
         
-    with ass.check("rotatedRectB"):
-        if ass.errors(): return
+    #with ass.check("rotatedRectB"):
+    #    if ass.errors(): return
     
-    with ass.check("rotatedRectC"):
-        if ass.errors(): return
+    #with ass.check("rotatedRectC"):
+    #    if ass.errors(): return
             
-    with ass.check("rotatedEllipse"):
-        if ass.errors(): return
+    #with ass.check("rotatedEllipse"):
+    #    if ass.errors(): return
 
     with ass.check("twoDiscsA"):
         if ass.errors(): return
