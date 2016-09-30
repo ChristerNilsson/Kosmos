@@ -14,13 +14,11 @@ def lektion3(ass):
         if ass.errors(): return
 
 
-    with ass.check("sunshine"):
-        if ass.errors(): return
-        
-
     with ass.check("skislope"):
         if ass.errors(): return
 
                         
+    with ass.check("sunshine"):
+        if ass.errors(): return
 
             
