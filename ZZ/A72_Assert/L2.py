@@ -48,3 +48,17 @@ def L2():
     assert l(1) == 22
     assert l(2) == 33
     
+    def m(x): return 00
+    assert m(0) == 0
+    assert m(1) == 0.5
+    assert m(2) == 1
+    
+    def n(x): return 00
+    assert n(0) == 200
+    assert n(1) == 100
+    assert n(2) == 0
+
+    def o(x): return 00
+    assert o(0) == 200
+    assert o(1) == 180
+    assert o(2) == 160
